@@ -178,6 +178,115 @@ body {
     margin: 0; /* Убираем отступы */
 }
 
+/* ===== НОВОСТИ ===== */
+.news-container {
+    display: grid; /* Сеточное расположение новостей */
+    gap: 25px; /* Расстояние между новостями */
+}
+
+.news-card {
+    background: white; /* Белый фон карточки новости */
+    padding: 30px; /* Внутренние отступы */
+    border-radius: 15px; /* Скругленные углы */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Легкая тень */
+    border-left: 4px solid #667eea; /* Синяя полоса слева */
+}
+
+.news-title {
+    font-size: 24px; /* Размер шрифта заголовка новости */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    margin: 0 0 10px 0; /* Отступ снизу */
+    font-weight: 600; /* Жирный шрифт */
+}
+
+.news-meta {
+    color: #95a5a6; /* Серый цвет для мета-информации */
+    font-size: 14px; /* Меньший размер шрифта */
+    margin: 0 0 15px 0; /* Отступ снизу */
+}
+
+.news-text {
+    color: #34495e; /* Темно-синий цвет текста */
+    line-height: 1.7; /* Межстрочный интервал */
+    margin: 0; /* Убираем отступы */
+}
+
+/* ===== ТОВАРЫ ===== */
+.products-grid {
+    display: grid; /* Сеточное расположение товаров */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Адаптивные колонки */
+    gap: 30px; /* Расстояние между товарами */
+    margin-top: 30px; /* Отступ сверху */
+}
+
+.product-card {
+    background: white; /* Белый фон карточки товара */
+    padding: 25px; /* Внутренние отступы */
+    border-radius: 15px; /* Скругленные углы */
+    text-align: center; /* Выравнивание по центру */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Легкая тень */
+    transition: transform 0.3s ease; /* Плавная анимация трансформации */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Поднятие элемента при наведении */
+}
+
+.product-image {
+    width: 200px; /* Фиксированная ширина изображения */
+    height: 250px; /* Фиксированная высота изображения */
+    border-radius: 10px; /* Скругленные углы изображения */
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+    margin-bottom: 20px; /* Отступ снизу */
+    border: 3px solid #f8f9fa; /* Светлая рамка вокруг изображения */
+}
+
+.product-name {
+    font-size: 18px; /* Размер шрифта названия товара */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    margin: 10px 0; /* Вертикальные отступы */
+    font-weight: 600; /* Жирный шрифт */
+}
+
+.product-price {
+    font-size: 20px; /* Размер шрифта цены */
+    color: #e74c3c; /* Красный цвет для цены */
+    font-weight: 700; /* Очень жирный шрифт */
+    margin: 5px 0; /* Вертикальные отступы */
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contacts-container {
+    text-align: center; /* Выравнивание по центру */
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Светлый градиентный фон */
+    padding: 25px; /* Внутренние отступы */
+    margin: 20px 0; /* Вертикальные отступы */
+    border-radius: 15px; /* Скругленные углы */
+    font-size: 18px; /* Размер шрифта */
+    color: #2c3e50; /* Темно-синий цвет текста */
+}
+
+.contact-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Фиолетово-синий градиент */
+    color: white; /* Белый цвет текста */
+    border: none; /* Убираем рамку кнопки */
+    padding: 15px 40px; /* Внутренние отступы кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border-radius: 30px; /* Круглые углы кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    margin-top: 20px; /* Отступ сверху */
+    font-weight: 600; /* Жирный шрифт */
+    transition: all 0.3s ease; /* Плавные анимации при изменении */
+}
+
+.contact-button:hover {
+    transform: translateY(-2px); /* Поднятие кнопки при наведении */
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4); /* Тень при наведении */
+}
+
 /* ===== ФУТЕР ===== */
 .footer {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Темный градиентный фон */
