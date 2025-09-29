@@ -7,9 +7,13 @@
         <link rel="stylesheet" href="style/styles.css">
     </head>
     <body>
+        <!-- Изменение: Заменили div на семантические теги -->
         <div class="page-container">
-            <div class="header">Главная</div>
-            <div class="nav">
+            <header class="header"> <!-- Было: <div class="header"> -->
+                <h1>Главная</h1> <!-- Добавили заголовок для семантики -->
+            </header>
+
+            <nav class="nav"> <!-- Было: <div class="nav"> -->
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -17,43 +21,53 @@
                     <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <div class="profile-header">
+            </nav>
+
+            <main class="content"> <!-- Было: <div class="content"> -->
+                <article class="profile-header"> <!-- Было: <div class="profile-header"> -->
                     <h1 class="profile-title">Информация об авторе</h1>
                     <img class="profile-photo" src="images/chel.jpg" alt="Фото автора">
                     <h2 class="profile-name">Кан Савелий Намович</h2>
                     <p class="profile-group">ЭФБО-11-24</p>
-                </div>
+                </article>
                 
-                <div class="about-me">
+                <section class="about-me"> <!-- Было: <div class="about-me"> -->
+                    <h2>Обо мне</h2> <!-- Добавили заголовок для семантики -->
                     <p>Обо мне: Я родился в Москве потом переехал потом еще раз и кароче так туда сюда мирэа и все короче.</p>
-                </div>
+                </section>
                 
-                <div class="skills-container">
-                    <div class="skill-tag">Смотреть тик ток</div>
-                    <div class="skill-tag">Играть в доту 4к ммр</div>
-                    <div class="skill-tag">Спать больше 12 часов</div>
-                    <div class="skill-tag">Гулять и кушать пицу</div>
-                </div>
+                <section class="skills-container"> <!-- Было: <div class="skills-container"> -->
+                    <h2>Мои навыки</h2> <!-- Добавили заголовок для семантики -->
+                    <div class="skills-grid"> <!-- Обертка для Grid -->
+                        <div class="skill-tag">Смотреть тик ток</div>
+                        <div class="skill-tag">Играть в доту 4к ммр</div>
+                        <div class="skill-tag">Спать больше 12 часов</div>
+                        <div class="skill-tag">Гулять и кушать пицу</div>
+                    </div>
+                </section>
                 
-                <div class="experience-section">
+                <section class="experience-section"> <!-- Было: <div class="experience-section"> -->
                     <h2 class="section-title">Мой опыт работы</h2>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Тик ток аналитик</h3>
-                        <p class="experience-desc">Проффесианально смотрел тик ток.</p>
+                    <div class="experience-grid"> <!-- Обертка для Grid -->
+                        <article class="experience-card"> <!-- Было: <div class="experience-card"> -->
+                            <h3 class="experience-title">Тик ток аналитик</h3>
+                            <p class="experience-desc">Проффесианально смотрел тик ток.</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Кроватный менеджер</h3>
+                            <p class="experience-desc">Спал на разных кроватках.</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Аналитик улиц</h3>
+                            <p class="experience-desc">Гулял на разных улицах.</p>
+                        </article>
                     </div>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Кроватный менеджер</h3>
-                        <p class="experience-desc">Спал на разных кроватках.</p>
-                    </div>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Аналитик улиц</h3>
-                        <p class="experience-desc">Гулял на разных улицах.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">Футер</div>    
+                </section>
+            </main>
+
+            <footer class="footer"> <!-- Было: <div class="footer"> -->
+                <p>Футер</p> <!-- Добавили параграф для семантики -->
+            </footer>    
         </div>
     </body>
 </html>

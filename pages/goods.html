@@ -1,48 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Товары</title>
+        <link rel="stylesheet" href="../style/styles.css">
+    </head>
+    <body>
+        <div class="page-container">
+            <!-- Изменение: Заменили div на семантический тег -->
+            <header class="header">
+                <h1>Наши товары</h1> <!-- Добавили осмысленный заголовок -->
+            </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Семестровая работа</title>
-    <link rel="stylesheet" href="../style/styles.css">
-</head>
+            <!-- Изменение: Заменили div на семантический тег -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
 
-<body>
-    <div class="page-container">
-        <div class="header">Товары</div>
-        <div class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-            </ul>
+            <!-- Изменение: Заменили div на семантический тег -->
+            <main class="content">
+                <!-- Изменение: Заменили div на семантический тег -->
+                <section class="products-section">
+                    <h2 class="section-title">Каталог товаров</h2>
+                    <p class="section-description">Вот все крутые товары для крутых ребят</p>
+                    
+                    <!-- Изменение: Заменили div на семантический тег -->
+                    <div class="products-grid">
+                        <!-- Изменение: Заменили div на семантический тег -->
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img class="product-image" src="../images/iphone17pro.jpg" alt="Очень дорогой айфон 17 про">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Айфон 17 про</h3>
+                                <p class="product-description">Самый дорогой и новейший айфон про версии</p>
+                                <p class="product-price">150 990 ₽</p>
+                                <button class="product-button">В корзину</button>
+                            </div>
+                        </article>
+                        
+                        <!-- Изменение: Заменили div на семантический тег -->
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img class="product-image" src="../images/iphone16e.jpg" alt="Айфон 16е">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Айфон 16е</h3>
+                                <p class="product-description">Самый худший айфон из всех вообще не стоит покупать его</p>
+                                <p class="product-price">64 990 ₽</p>
+                                <button class="product-button">В корзину</button>
+                            </div>
+                        </article>
+                        
+                        <!-- Изменение: Заменили div на семантический тег -->
+                        <article class="product-card">
+                            <div class="product-image-container">
+                                <img class="product-image" src="../images/glasses.jpg" alt="Умные очки">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Умные очки</h3>
+                                <p class="product-description">Очки которые умеют снимать видео</p>
+                                <p class="product-price">12 990 ₽</p>
+                                <button class="product-button">В корзину</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Изменение: Заменили div на семантический тег -->
+            <footer class="footer">
+                <p>Футер</p>
+            </footer>    
         </div>
-        <div class="content">
-            <h2 class="selection-title">Наши товары</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img class="product-image" src="../images/iphone17pro.jpg" alt="Фото айфона 17 про">
-                    <h3 class="product-name">iphone 17 pro</h3>
-                    <p class="product-price">150 000 рублей</p>
-                </div>
-                <div class="product-card">
-                    <img class="product-image" src="../images/iphone16e.jpg" alt="Фото айфона 17 про">
-                    <h3 class="product-name">iphone 16e</h3>
-                    <p class="product-price">56 000 рублей</p>
-                </div>
-                <div class="product-card">
-                    <img class="product-image" src="../images/glasses.jpg" alt="Фото айфона 17 про">
-                    <h3 class="product-name">Умные очки</h3>
-                    <p class="product-price">55 000 рублей</p>
-                </div>
-            </div>
-            <div class="footer">футер</div>
-        </div>
-        
-</body>
-
+    </body>
 </html>
