@@ -1,77 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Новости</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <!-- Изменение: Заменили div на семантический тег -->
-            <header class="header">
-                <h1>Новости</h1> <!-- Добавили осмысленный заголовок -->
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+<body>
+    <div class="page">
+        <!-- Изменение: Заменили div на семантический тег -->
+        <header class="header">
+            <h1 class="header__title">Новости</h1> <!-- Добавили осмысленный заголовок -->
+        </header>
 
+        <!-- Изменение: Заменили div на семантический тег -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Изменение: Заменили div на семантический тег -->
+        <main class="news">
             <!-- Изменение: Заменили div на семантический тег -->
-            <main class="content">
+            <section class="news__title">
+                <h2 class="news__list">Последние новости</h2>
+
                 <!-- Изменение: Заменили div на семантический тег -->
-                <section class="news-container">
-                    <h2 class="section-title">Последние новости</h2>
-                    
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Запуск аналога телеграма</h2>
-                            <p class="news-meta">02.09.2025 | Автор: Россия</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Текст новости 1. Очень круто узнать, что великая Россия находит способы и решения против плохих всякий американских дураков.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Короче хз че писать</h2>
-                            <p class="news-meta">01.01.2025 | Автор: Я</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Текст новости 2. Не я реально не знаю че еще придумать.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Тоже не знаю какие новости еще есть</h2>
-                            <p class="news-meta">01.01.2025 | Автор: Тоже я</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Текст новости 3. Все еще не знаю как и чем наполнить тект о новости 3.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                </section>
-            </main>
+                <article class="news">
+                    <header class="news-item">
+                        <h2 class="news-item__title">Запуск аналога телеграма</h2>
+                        <p class="news-item__date">02.09.2025 | Автор: Россия</p>
+                    </header>
+                    <div class="news-item">
+                        <p class="news-item__text">Текст новости 1. Очень круто узнать, что великая Россия находит
+                            способы и решения против плохих всякий американских дураков.</p>
+                        <a href="#" class="news-link">Читать далее...</a>
+                    </div>
+                </article>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <footer class="footer">
-                <p>Футер</p>
-            </footer>    
-        </div>
-    </body>
+                <article class="news">
+                    <header class="news-item">
+                        <h2 class="news-item__title">Короче хз че писать</h2>
+                        <p class="news-item__date">01.01.2025 | Автор: Я</p>
+                    </header>
+                    <div class="news-item">
+                        <p class="news-item__text">Текст новости 2. Не я реально не знаю че еще придумать.</p>
+                        <a href="#" class="news-link">Читать далее...</a>
+                    </div>
+                </article>
+
+                <article class="news">
+                    <header class="news-item">
+                        <h2 class="news-item__title">Тоже не знаю какие новости еще есть</h2>
+                        <p class="news-item__date">01.01.2025 | Автор: Тоже я</p>
+                    </header>
+                    <div class="news-item">
+                        <p class="news-item__text">Текст новости 3. Все еще не знаю как и чем наполнить тект о новости
+                            3.</p>
+                        <a href="#" class="news-link">Читать далее...</a>
+                    </div>
+                </article>
+
+
+            </section>
+        </main>
+
+        <!-- Изменение: Заменили div на семантический тег -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </footer>
+    </div>
+</body>
+
 </html>

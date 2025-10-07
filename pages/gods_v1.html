@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Наши товары</h1> 
+        </header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section class="products">
+                <h2 class="products-title">Каталог товаров</h2>
+                <p class="products-title__description">Вот все крутые товары для крутых ребят</p>
+
+                <!-- Изменение: Заменили div на семантический тег -->
+                <div class="products-grid">
+                    <!-- Изменение: Заменили div на семантический тег -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../images/iphone17pro.jpg" alt="Очень дорогой айфон 17 про">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-info__name">Айфон 17 про</h3>
+                            <p class="product-info__description">Самый дорогой и новейший айфон про версии</p>
+                            <p class="product-info__price">150 990 ₽</p>
+                            <button class="product-info__button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <!-- Изменение: Заменили div на семантический тег -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../images/iphone16e.jpg" alt="Айфон 16е">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-info__name">Айфон 16е</h3>
+                            <p class="product-info__description">Самый худший айфон из всех вообще не стоит покупать его</p>
+                            <p class="product-info__price">64 990 ₽</p>
+                            <button class="product-info__button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <!-- Изменение: Заменили div на семантический тег -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../images/glasses.jpg" alt="Умные очки">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-info__name">Умные очки</h3>
+                            <p class="product-info__description">Очки которые умеют снимать видео</p>
+                            <p class="product-info__price">12 990 ₽</p>
+                            <button class="product-info__button">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Изменение: Заменили div на семантический тег -->
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </footer>
+    </div>
+</body>
+
+</html>

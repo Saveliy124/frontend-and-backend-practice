@@ -9,60 +9,73 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>Практики</h1>
+            <h1 class="header__title">Практики</h1>
         </header>
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
             </ul>
         </nav>
-        <main class="content">
-            <h2 class="section-title">Мои практики</h2>
-            <article class="news-card">
-                <header class="news-header">
-                    <h2 class="news-title">Аналитика тик тока</h2>
-                    <p class="news-meta">Свыше 1000 часов активной практики</p>
-                </header>
-                <div class="news-content">
-                    <p class="news-text">Я изучал ленту тик тока более 1000 часов и анализоровал каждое видео</p>
-                </div>
-            </article>
+        <main class="main">
+            <section class="practices">
+                <h2 class="practices-title">Мои практики</h2>
+                <article class="practices-card">
+                    <header class="practices-header">
+                        <h2 class="practices-header__title">Аналитика тик тока</h2>
+                        <p class="practices-header__meta">Свыше 1000 часов активной практики</p>
+                    </header>
+                    <div class="practices-content">
+                        <p class="practices-content__text">Я изучал ленту тик тока более 1000 часов и анализоровал
+                            каждое видео</p>
+                    </div>
+                </article>
 
 
 
-            <article class="news-card">
-                <header class="news-header">
-                    <h2 class="news-title">Анализ матрасов</h2>
-                    <p class="news-meta">18 лет</p>
-                </header>
-                <div class="news-content">
-                    <p class="news-text">Ведущий специалист в области матрасов.</p>
-                </div>
-            </article>
+                <article class="practices-card">
+                    <header class="practices-header">
+                        <h2 class="practices-header__title">Анализ матрасов</h2>
+                        <p class="practices-header__meta">18 лет</p>
+                    </header>
+                    <div class="practices-content">
+                        <p class="practices-content__text">Ведущий специалист в области матрасов.</p>
+                    </div>
+                </article>
 
 
 
 
 
-            <article class="news-card">
-                <header class="news-header">
-                    <h2 class="news-title">Игрок в клеш рояль</h2>
-                    <p class="news-meta">8 лет</p>
-                </header>
-                <div class="news-content">
-                    <p class="news-text">Играю в клеш рояль почти как профи.</p>
-                </div>
-            </article>
-
+                <article class="practices-card">
+                    <header class="practices-header">
+                        <h2 class="practices-header__title">Игрок в клеш рояль</h2>
+                        <p class="practices-header__meta">8 лет</p>
+                    </header>
+                    <div class="practices-content">
+                        <p class="practices-content__text">Играю в клеш рояль почти как профи.</p>
+                    </div>
+                </article>
+            </section>
         </main>
-        <div class="footer">футер</div>
+        <div class="footer">
+            <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </div>
     </div>
 </body>
 
